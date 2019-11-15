@@ -3,6 +3,7 @@ class Comment < ActiveRecord::Base
   belongs_to :post
   accepts_nested_attributes_for :user
   
-  def user_attributes
+  def user_attributes=(user_attributes)
+    
 
 end
