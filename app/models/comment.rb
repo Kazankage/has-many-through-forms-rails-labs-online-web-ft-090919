@@ -4,6 +4,6 @@ class Comment < ActiveRecord::Base
   accepts_nested_attributes_for :user
   
   def user_attributes=(user_attributes)
-    self.user=
+    self.user= User.find
 
 end
